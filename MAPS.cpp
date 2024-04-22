@@ -102,8 +102,6 @@ void printall(){
 
 void printPath(int currentVertex, double parents[]){
  	
-    // Base case : Source node has
-    // been processed
     if (currentVertex == -1) {
         return;
     }
@@ -111,19 +109,14 @@ void printPath(int currentVertex, double parents[]){
     cout << data[currentVertex] << " -> ";
 }
  
-// A utility function to print
-// the constructed distances
-// array and shortest paths
+
+
 void printSolution(double distances[], double parents[], int end){   
     printPath(end, parents);
     cout<<(double)distances[end]<<"km ";
 }
  
-// Function that implements Dijkstra's
-// single source shortest path
-// algorithm for a graph represented
-// using adjacency matrix
-// representation
+
  
 double dijkstra(int start, int end){
     
